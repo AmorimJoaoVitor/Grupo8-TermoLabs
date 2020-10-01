@@ -1,0 +1,49 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+body {
+    height: 100vh;
+    background: url("teste.png") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.estilo{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+.input{
+    border-radius: 14px;
+    font-size: 30px;
+    background: #ff543d;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+
+}
+.botao{
+    border-radius: 14px;
+    font-size: 34px;
+    background: #ff543d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#resultado{
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.texto{
+    text-align: center;
+}
