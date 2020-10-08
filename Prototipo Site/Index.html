@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termo Labs</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+        <img src="Imagens/LogoSemFundo.png">
+        <ul>
+            <li class="current"> Home</li>
+            <li> <a href="sobre.html"> Sobre</a> </li>
+            <li> Planos </li>
+            <li> Simulador Financeiro </li>
+            <li> Contatos </li>
+            <li> Login </li>
+
+            
+        </ul>
+
+      
+    </div>
+
+    <div class="container">
+        <div id="slider">
+        <img class="selected" src="Imagens/banner01.png" alt="Image1">
+        <img src="Imagens/banner02.png" alt="Image2">
+        <img src="Imagens/banner03.png" alt="Image3">
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+ let time = 2000,
+    currentImageIndex = 0,
+    images = document.querySelectorAll('#slider img')
+    max = images.length;
+
+function nextImage(){
+    images[currentImageIndex].classList.remove('selected')
+    
+    currentImageIndex++
+
+    if(currentImageIndex >= max){
+        currentImageIndex = 0
+    }
+    
+    images[currentImageIndex].classList.add('selected')
+}
+
+
+function start(){
+    setInterval (() => {nextImage()}, time)
+}
+
+window.addEventListener('load', start);
+
+</script>
