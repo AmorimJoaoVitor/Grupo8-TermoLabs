@@ -18,11 +18,6 @@ a:hover{
     font-weight: bold;
 }
 
-.mudanca {
-    width: 0px;
-    height: 100px;
-    margin: auto;
-}
 .navbar{
     background-color:#f5eadc;
     color: black;
@@ -62,9 +57,11 @@ a:hover{
 .banner {
     height: 420px;
     background: url(../Imagens/fund-banner.png) #f5eadc no-repeat scroll;
-    background-size: cover;
+    background-size: 100%;
     margin-top: 4px;
     border-bottom: solid #e74c3c 3px;
+    Background-Attachment :fixed;
+    
 }
 
 .banner h1{
@@ -77,8 +74,11 @@ a:hover{
 
 .container_banner{
    
-   width: 35%;
-   height: 100%;
+    width: 35%;
+    height: 100%;
+    width: 35%;
+    height: 100%;
+    padding-left: 40px;
 }
 
 .banner p{
@@ -91,3 +91,26 @@ a:hover{
 
 
 
+.fundo_conteudo{
+    background-size: cover;
+    margin: 0px 0px;
+    background-color: #ebe6e0;
+    height: 380px;
+}
+
+.conteudo2{
+    font-size: 25px;
+    color: #000000ba;
+    text-align: center;
+    display: flex;
+    border-right: 5px solid orangered;
+
+}
+
+.banner2{
+    height: 380px;
+    width: 95%;
+    margin: auto;
+    align-items: center;
+    display: flex
+}
