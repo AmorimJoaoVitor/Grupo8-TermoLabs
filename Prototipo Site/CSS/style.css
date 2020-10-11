@@ -61,8 +61,9 @@ a:hover{
 
 .banner {
     height: 420px;
-    background: url(../Imagens/fund-banner.png) #f5eadc no-repeat scroll;
-    background-size: cover;
+    background: url(../Imagens/fund-banner.png) #f5eadc no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
     margin-top: 4px;
     border-bottom: solid #e74c3c 3px;
 }
