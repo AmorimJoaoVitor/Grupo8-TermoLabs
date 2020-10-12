@@ -54,9 +54,10 @@ a:hover{
 /*Inicio primeiro banner*/
 .banner {
     height: 420px;
-    background: url(../Imagens/fund-banner.png) #f5eadc no-repeat;
-    background-size: 100% 100%;
+    background: url(../Imagens/fund-banner.png) #e9e7e0 no-repeat;
+    background-size: 80% 100%;
     border-bottom: solid #e74c3c 3px;
+    background-position-x: 100%;
 }
 
 .container_banner{
