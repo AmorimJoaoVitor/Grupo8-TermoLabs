@@ -1,7 +1,4 @@
 body {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  
     margin: 0; 
 }
 * {
@@ -54,40 +51,41 @@ a:hover{
     font-weight: bold;
 }
 
+/*Inicio primeiro banner*/
 .banner {
     height: 420px;
     background: url(../Imagens/fund-banner.png) #f5eadc no-repeat;
     background-size: 100% 100%;
-    margin-top: 4px;
     border-bottom: solid #e74c3c 3px;
+}
+
+.container_banner{
+    width: 95%;
+    margin: auto;
+    color: #e74c3c;
+}
+
+.conteudo_banner1{
+    width: 38%;
 }
 
 .banner h1{
     margin: 0px;
     font-size: 33px;
-    color: #e74c3c;
-    padding: 55px;
+    padding: 52px 31px;
     text-align: center;
-}
-
-.container_banner{
-   
-    width: 35%;
-    height: 100%;
-    width: 35%;
-    height: 100%;
-    padding-left: 40px;
 }
 
 .banner p{
     margin: 0;
-    color: #e74c3c;
-    font-weight: bold;
     font-size: 17px;
     text-align: center;
+    font-weight: bold;
 }
+/*fim primeiro banner*/
 
 
+/*Inicio segundo banner*/
 .fundo_conteudo{
     background-size: cover;
     margin: 0px 0px;
@@ -95,22 +93,24 @@ a:hover{
     height: 380px;
 }
 
-.conteudo2{
-    font-size: 25px;
-    color: rgb(20, 19, 19);
-    text-align: center;
-    display: flex;
-    border-right: 5px solid orangered;
 
-}
-
-.banner2{
+.banner_importancia{
     height: 380px;
-    width: 95%;
+    width: 80%;
     margin: auto;
     align-items: center;
     display: flex
 }
+
+.conteudo2{
+    font-size: 25px;
+    color: #141313;
+    text-align: center;
+    display: flex;
+    border-right: 5px solid orangered;
+}
+/*fim segundo banner*/
+
 
 .secao{
     width: 100%;
