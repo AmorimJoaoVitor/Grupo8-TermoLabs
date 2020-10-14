@@ -7,6 +7,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 	<script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
 	<script src="http://www.chartjs.org/samples/latest/utils.js"></script>
+	<link rel="stylesheet" href="style.css">
 	<style>
 		canvas {
 			-moz-user-select: none;
@@ -17,13 +18,38 @@
 </head>
 
 <body>
-	<section>
-		<h2>Atual: <label id='average'>0.00</label></h2>
-		<h2>Média Hora: <label id='averageHour'>0.00</label></h2>
-	</section>
+
+	<div class="navbar">
+		<div class="container_navbar">
+			<img src="LogoTerm.png" alt="Logo">
+			<ul>
+				<li>Home</li> 
+				<li>Sobre</li>
+				<li>Contato</li>
+				<li>Login</li>
+			</ul>
+		</div>
+	</div>
+
+<div class="grafico">
+	
+	<select class="slc_camaras">
+		<option value="cam1">Câmara 1</option>
+		<option value="cam2">Câmara 2</option>
+		<option value="cam3">Câmara 3</option>
+		<option value="cam4">Câmara 4</option>
+	</select>
+
 	<section style="width:100%">
 		<canvas id="chart"></canvas>
-	<section>
+	</section>
+
+	<section style="height: 100px;">
+		
+		<h2 style="float: left;margin: 0 70px 0px 55px;">Atual: <label id='average'>0.00</label></h2>
+		<h2 style="margin: 0;">Média Hora: <label id='averageHour'>0.00</label></h2>
+		
+	</section>
 	<script>
 		var color = Chart.helpers.color;
 		var context = document.getElementById("chart").getContext("2d");
@@ -36,7 +62,7 @@
 				datasets: [{
 					label: "Temperature x Time",
 					type: 'line',
-					backgroundColor: "rgba(255, 177, 193, 0.5)",
+					backgroundColor: "#ff44006e",
 					borderColor: "#ffb1c1",
                 	borderWidth: 1,
 					}]
@@ -55,7 +81,7 @@
 					yAxes: [{
 						scaleLabel: {
 							display: true,
-							labelString: 'Temperature'
+							labelString: 'Temperatura'
 
                         },
                         ticks: {
@@ -118,6 +144,7 @@
         }, 1000);
 
 	</script>
+</div>
 </body>
 
 </html>
