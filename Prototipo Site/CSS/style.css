@@ -103,12 +103,19 @@ a:hover{
     display: flex
 }
 
-.conteudo2{
-    font-size: 25px;
-    color: #141313;
+.banner_importancia .tit_2 {
+    color: #e74c3c;
+    font-size: 33px;
     text-align: center;
-    display: flex;
-    border-right: 5px solid orangered;
+    margin-right: 50px;
+}
+
+.banner_importancia .cont_2 {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 50px;
+    border-right: solid orangered 3px;
+    padding-right: 10px;
 }
 /*fim segundo banner*/
 
@@ -147,4 +154,61 @@ a:hover{
 .sec_sistema p{
     font-size: 25px;
     text-align: left;
+}
+
+.secao_dif{
+    width: 100%;
+    height: 800px;
+    background: #ebe6e0;
+    display:flex;
+   
+justify-content: center;
+}
+
+.container_dif{
+    width: 90%;
+    height: 90%;
+
+    margin-top: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_dif img{
+    width: 205px;
+}
+
+.p_diferenciais {
+    text-align: center;
+    font-size: 25px;
+    width: 900px;
+    border-bottom: 3px solid #e74c3c;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.diferenciais{
+    font-size: 50px;
+    color: #e74c3c;
+}
+ .beneficios{
+     font-size: 34px;
+     color:  #e74c3c;
+ }
+ .time {
+    width: 205px;
+    border: solid 3px #e74c3c;
+    border-radius: 36px;
+    margin: 0 10px;
+}
+.monitor{
+    display: flex;
+}
+
+.desc {
+    text-align: center;
+}
+.time .money {
+    padding: 27px 0;
 }
