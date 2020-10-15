@@ -1,5 +1,6 @@
 body {
     margin: 0; 
+    height: 100vh;
 }
 * {
     font-family: 'roboto',sans-serif;
@@ -209,6 +210,56 @@ justify-content: center;
 .desc {
     text-align: center;
 }
-/* .time .money {
-    padding: 27px 0;
-} */
+
+.banner_calc{
+    background: url(../Imagens/bannercalc.png) fixed;
+    width: 100%;
+    height: 950px;
+}
+
+.container_calc {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.estilo{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-right: -60px;
+    align-items: center;
+
+}
+
+.texto {
+    text-align: center;
+}
+
+.input {
+    border-radius: 14px;
+    font-size: 30px;
+    background: #ff543d;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.botao {
+    border-radius: 14px;
+    font-size: 34px;
+    background: #ff543d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#resultado {
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+}

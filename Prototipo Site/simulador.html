@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador Financeiro</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
     <div class="navbar">
         <div class="container">
             <img src="Imagens/LogoSemFundo.png">
-        <ul>
-            <li> <a href="Index.html"> Home </a></li>
-            <li> Sobre </li>
-            <li> Planos </li>
-            <li class="current"> Simulador Financeiro </li>
-            <li> Contatos </li>
-            <li> Login </li>
-
-        </ul>
-
-      
+            <ul>
+                <li> <a href="Index.html"> Home </a></li>
+                <li> <a href="sobre.html"> Sobre</a> </li>
+                <li> <a href="planos.html"> Planos</a> </li>
+                <li class="current"> Simulador Financeiro </li>
+                <li> <a href="contato.html"> Contato</a> </li>
+                <li> Login </li>
+            </ul>
+        </div>
     </div>
-
+        <div class="banner_calc">
+            <div class="container_calc">
+                <div class="estilo">
+                    <h1 class="texto">QUANTO VOCÊ PERDE EM REMÉDIOS POR MÊS?</h1>
+                    <input class="input" id="valorInput" type="number">
+                    <button class="botao" onclick="calcular()">CALCULAR</button>
+                    <div id="resultado"></div>
+                </div>
+            </div>
+        </div>
 </body>
+
 </html>
