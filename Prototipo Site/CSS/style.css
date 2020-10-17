@@ -340,3 +340,81 @@ justify-content: center;
     margin: -0px 71px;
     height: 527px;
 }
+
+.banner_trabalho {
+    width: 100%;
+    height: 400px;
+    background: url(../Imagens/prancheta.jpg) no-repeat;
+    background-size: 100%; 
+    background-position: 100%;
+}
+
+.container_trabalho h1 {
+    margin: 0;
+    font-size: 42px;
+    color: #e74c3c;
+
+
+
+}
+
+.container_trabalho {
+    width: 95%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+
+
+.secao_trabalho {
+    height: 740px;
+    display: flex;
+    justify-content: center;
+    background-color: #ebe6e0;
+}
+
+.div_trabalho {
+    width: 95%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #e74c3c;
+    padding: 11px;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: lightsalmon;
+}
+
+.formulario H1 {
+    color: #e74c3c;
+
+}
+
+.form_trabalho {
+    padding: 20px 20px;
+    width: 206px;
+    height: 15px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    background-color: #f5eadc;
+}
+
+
+.botao_trabalho {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+}
