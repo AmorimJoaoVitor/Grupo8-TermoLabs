@@ -418,3 +418,51 @@ justify-content: center;
     color: white;
     cursor: pointer;
 }
+
+/* Página Contatos */
+
+.contato1{
+    height: 500px;
+    width: 100%;
+    border: #e74c3c solid 2px;
+    display: flex;
+    
+}
+
+.container_cont{
+    display: flex;    
+    margin-left: 40px;
+}
+
+.conteudo_cont{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 640px;
+}
+
+.form_conteudo{
+    padding: 20px 20px;
+    width: 206px;
+    height: 15px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    background-color: #f5eadc;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #e74c3c;
+    padding: 11px;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: lightsalmon;
+}
+
+.formulario H1 {
+    color: #e74c3c;
+
+}
