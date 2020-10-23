@@ -63,8 +63,7 @@ a:hover{
 
 .container_banner{
     width: 95%;
-    margin: auto;
-    color: #e74c3c;
+    margin: auto;;
 }
 
 .conteudo_banner1{
@@ -76,6 +75,7 @@ a:hover{
     font-size: 33px;
     padding: 70px 0px;
     text-align: center;
+    color: #e74c3c
 }
 
 .banner p{
@@ -83,6 +83,7 @@ a:hover{
     font-size: 17px;
     text-align: center;
     font-weight: bold;
+    color: black
 }
 /*fim primeiro banner*/
 
@@ -425,14 +426,16 @@ justify-content: center;
 .contato1{
     height: 675px;
     width: 100%;
-    border: #e74c3c solid 2px;
     display: flex;
+    background-color: #f5eadc;
+    margin-top: 3px;
     
 }
 
 .container_cont{
     display: flex;    
     margin-left: 40px;
+    align-items: center;
 }
 
 .conteudo_cont{
@@ -440,6 +443,8 @@ justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 640px;
+    padding-left: 35px;
+    border-left: #e74c3c solid 2px;
 }
 
 .form_conteudo{
@@ -449,6 +454,7 @@ justify-content: center;
     border-radius: 20px;
     margin-bottom: 25px;
     background-color: #f5eadc;
+    outline: 0;
 } 
 
 .form_conteudo_combo {
@@ -457,7 +463,8 @@ justify-content: center;
     border-radius: 20px;
     margin-bottom: 25px;
     background-color: #f5eadc;
-    padding: 0px 65px;
+    padding: 0px 51px;
+    outline: 0
 } 
 
 .formulario_cont {
@@ -485,4 +492,16 @@ justify-content: center;
     background-color: #e74c3c;
     color: white;
     cursor: pointer;
+    outline: 0
 }
+
+.conteudo_cont H1 {
+    color: #e74c3c;
+    font-size: 40px;
+}
+
+.conteudo_cont p{
+    font-size: 20px;
+}
+
+/* Fim da página contato */
