@@ -403,15 +403,26 @@ justify-content: center;
 
 }
 
+
+
 .form_trabalho {
-    padding: 20px 20px;
-    width: 206px;
-    height: 15px;
+    width: 205px;
+    height: 50px;
     border-radius: 20px;
     margin-bottom: 25px;
     background-color: #f5eadc;
+    padding: 0px 51px;
+    outline: 0
 }
 
+.select {
+        width: 205px;
+        height: 50px;
+        border-radius: 20px;
+        margin-bottom: 25px;
+        background-color: #f5eadc;
+        padding: 0px 20px;
+        outline: 0}
 
 .botao_trabalho {
     padding: 10px;
@@ -419,6 +430,11 @@ justify-content: center;
     background-color: #e74c3c;
     color: white;
     cursor: pointer;
+    outline: 0;
+}
+
+.formulario b {
+    color: #e74c3c;
 }
 
 /* Página Contatos */

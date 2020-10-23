@@ -28,15 +28,24 @@
         <div class="secao_trabalho">
             <div class="div_trabalho">
                 <div class="formulario">
-                    <H1>Insira seus dados</H1>
-                    <input class="form_trabalho" id="id_nome" placeholder="Insira seu nome">
-                    <input class="form_trabalho" id="id_email" placeholder="Insira seu e-mail">
-                    <input class="form_trabalho" id="id_escolaridade" placeholder="Insira sua escolaridade">
-                    <input class="form_trabalho" id="id_telefone" placeholder="Insira seu telefone">
-                    <input class="form_trabalho" id="id_celular" placeholder="Insira seu celular">
-                    <input class="form_trabalho" id="id_endereco" placeholder="Insira seu endereço">
-                    <select class="form_trabalho" id="id_estado">
-                        <option value="">-- Estado --</option>
+                    <H1><b>Insira seus dados</b></H1>
+                    <b>Nome</b><input class="form_trabalho" id="id_nome" placeholder="Insira seu nome">
+                    <b>E-mail</b><input class="form_trabalho" id="id_email" placeholder="Insira seu e-mail">
+                    <b>Telefone</b><input class="form_trabalho" id="id_telefone" placeholder="Insira seu telefone">
+                    <b>Celular</b><input class="form_trabalho" id="id_celular" placeholder="Insira seu celular">
+                    <b>Endereço</b><input class="form_trabalho" id="id_endereco" placeholder="Insira seu endereço">
+                    <b>Grau de formação</b><select class="select" id="id_escolaridade" placeholder="Insira sua escolaridade">
+                        <option value="">-- selecione --</option>
+                        <option value="fi">Fundamental Incompleto</option>
+                        <option value="fc">Fundamental Completo</option>
+                        <option value="mi">Médio Incompleto</option>
+                        <option value="mc">Médio Completo</option>
+                        <option value="si">Superior Incompleto</option>
+                        <option value="sc">Superior Completo</option>
+                    </select>    
+                    <b>Escolha seu estado</b>
+                    <select class="select" id="id_estado">
+                        <option value="">-- selecione --</option>
                         <option value="sp">São Paulo</option>
                     </select>
                     <button class="botao_trabalho">Enviar</button>
