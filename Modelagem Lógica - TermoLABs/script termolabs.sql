@@ -1,6 +1,18 @@
 create database termolabs;
 use termolabs;
 
+create table usuario (
+idUsuario int primary key auto_increment,
+email varchar(70),
+senha char(8),
+fkEmpresa int,
+foreign key (fkEmpresa) references empresa (idEmpresa)
+)auto_increment = 1000;
+
+insert into usuario values 
+(null, "mario.ruben@drogasil.com", "87364951", 2),
+(null, "gina.silva@drogariasp.com", "57984621", 1);
+
 create table empresa (
 idEmpresa INT primary key auto_increment,
 nomeEmpresa varchar(45),
@@ -21,22 +33,22 @@ tamanho varchar(45),
 tipoCamara varchar(45)
 ) auto_increment = 100;
 
+alter table camara add column fkEmpresa INT; 
+alter table camara add foreign key (fkEmpresa) references empresa(idEmpresa);
+
 create table sensorTemp (
 idSensor INT primary key auto_increment,
 tipoCamara varchar(45)
 ) auto_increment = 200;
+
+alter table sensorTemp add column fkCamara INT; 
+alter table sensorTemp add foreign key (fkCamara) references Camara(idCamara);
 
 create table medicao (
 data_hora datetime,
 temperatura INT,
 primary key(data_hora, temperatura)
 ) auto_increment = 300;
-
-alter table camara add column fkEmpresa INT; 
-alter table camara add foreign key (fkEmpresa) references empresa(idEmpresa);
-
-alter table sensorTemp add column fkCamara INT; 
-alter table sensorTemp add foreign key (fkCamara) references Camara(idCamara);
 
 alter table medicao add column fkSensor INT; 
 alter table medicao add foreign key (fkSensor) references sensorTemp(idSensor);
@@ -46,16 +58,16 @@ insert into empresa values
 (null, "Drogasil", "Drogaria", "(21)38743453", "(21)38745453", "Rio de Janeiro", "Botafogo", "Rua São Judas", "06753832", "87", "61412110007474");
 
 insert into camara values
-(null, "10m²", "geladeira", null),
-(null, "5m²", "Freezer", null);
+(null, "10m²", "geladeira", 2),
+(null, "5m²", "Freezer", 1);
 
 insert into sensorTemp values
-(null, "LM35", 102),
-(null, "LM35", 103);
+(null, "Geladeira comercial", 101),
+(null, "Freezer", 100);
 
 insert into medicao values
-("2020-10-22 14:23:54", 5, 200),
-("2020-10-21 12:00:00", 6, 201);
+("2020-10-22 14:23:54", 5, 201),
+("2020-10-21 12:00:00", 6, 200);
 
 select * from empresa;
 select * from camara;
