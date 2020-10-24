@@ -212,11 +212,11 @@ justify-content: center;
     text-align: center;
 }
 
-.banner_calc{
+.banner_calc {
     background: url(../Imagens/bannercalc.png) no-repeat;
     background-size: contain;
     width: 100%;
-    height: 950px;
+    height: 689px;
 }
 .banner_calc .titulo_calc{
   
@@ -349,6 +349,7 @@ justify-content: center;
     background: url(../Imagens/prancheta.jpg) no-repeat;
     background-size: 100%; 
     background-position: 100%;
+    border-bottom: solid #e74c3c 3px;
 }
 
 .container_trabalho h1 {
@@ -371,7 +372,7 @@ justify-content: center;
 
 
 .secao_trabalho {
-    height: 740px;
+    height: 845px;
     display: flex;
     justify-content: center;
     background-color: #ebe6e0;
@@ -379,7 +380,7 @@ justify-content: center;
 
 .div_trabalho {
     width: 95%;
-    height: 650px;
+    height: 845px;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -396,12 +397,10 @@ justify-content: center;
     border-radius: 30px;
     margin-top: 10px;
     background-color: lightsalmon;
+    width: 600px;
 }
 
-.formulario H1 {
-    color: #e74c3c;
 
-}
 
 
 
@@ -433,9 +432,8 @@ justify-content: center;
     outline: 0;
 }
 
-.formulario b {
-    color: #e74c3c;
-}
+
+
 
 /* Página Contatos */
 
@@ -443,7 +441,7 @@ justify-content: center;
     height: 675px;
     width: 100%;
     display: flex;
-    background-color: #f5eadc;
+    background-color:#ebe6e0;
     margin-top: 3px;
     
 }
@@ -521,3 +519,43 @@ justify-content: center;
 }
 
 /* Fim da página contato */
+
+/* Inicio rodapé */
+.logo_rod {
+    width: 360px;
+    text-align: center;
+    padding-left: 20px;
+    
+}
+.rodape{
+    height: 212px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid #e74c3c;
+}
+
+.rodape h5{
+    color: #e74c3c;
+}
+
+.icones img {
+    width: 50px;
+    margin:0;
+    padding: 10px;
+}
+
+.icones {
+    text-align: center;
+    padding-right: 20px;
+}
+
+.endereco {
+    text-align: center;
+}
+
+.endereco p {
+    text-align: center;
+}
+
+/* Final rodapé */
