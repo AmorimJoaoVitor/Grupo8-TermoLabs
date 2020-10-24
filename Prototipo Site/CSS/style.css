@@ -63,8 +63,7 @@ a:hover{
 
 .container_banner{
     width: 95%;
-    margin: auto;
-    color: #e74c3c;
+    margin: auto;;
 }
 
 .conteudo_banner1{
@@ -76,6 +75,7 @@ a:hover{
     font-size: 33px;
     padding: 70px 0px;
     text-align: center;
+    color: #e74c3c
 }
 
 .banner p{
@@ -83,6 +83,7 @@ a:hover{
     font-size: 17px;
     text-align: center;
     font-weight: bold;
+    color: black
 }
 /*fim primeiro banner*/
 
@@ -212,7 +213,8 @@ justify-content: center;
 }
 
 .banner_calc{
-    background: url(../Imagens/bannercalc.png) fixed;
+    background: url(../Imagens/bannercalc.png) no-repeat;
+    background-size: contain;
     width: 100%;
     height: 950px;
 }
@@ -401,15 +403,26 @@ justify-content: center;
 
 }
 
+
+
 .form_trabalho {
-    padding: 20px 20px;
-    width: 206px;
-    height: 15px;
+    width: 205px;
+    height: 50px;
     border-radius: 20px;
     margin-bottom: 25px;
     background-color: #f5eadc;
+    padding: 0px 51px;
+    outline: 0
 }
 
+.select {
+        width: 205px;
+        height: 50px;
+        border-radius: 20px;
+        margin-bottom: 25px;
+        background-color: #f5eadc;
+        padding: 0px 20px;
+        outline: 0}
 
 .botao_trabalho {
     padding: 10px;
@@ -417,4 +430,222 @@ justify-content: center;
     background-color: #e74c3c;
     color: white;
     cursor: pointer;
+    outline: 0;
 }
+
+.formulario b {
+    color: #e74c3c;
+}
+
+/* Página Contatos */
+
+.contato1{
+    height: 675px;
+    width: 100%;
+    display: flex;
+    background-color: #f5eadc;
+    margin-top: 3px;
+    
+}
+
+.container_cont{
+    display: flex;    
+    margin-left: 40px;
+    align-items: center;
+}
+
+.conteudo_cont{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 640px;
+    padding-left: 35px;
+    border-left: #e74c3c solid 2px;
+}
+
+.form_conteudo{
+    padding: 20px 20px;
+    width: 206px;
+    height: 15px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    background-color: #f5eadc;
+    outline: 0;
+} 
+
+.form_conteudo_combo {
+    width: 205px;
+    height: 50px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    background-color: #f5eadc;
+    padding: 0px 51px;
+    outline: 0
+} 
+
+.formulario_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #e74c3c;
+    padding: 11px;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: lightsalmon;
+    margin-left: 170px;
+    width: 57%;
+}
+
+.formulario_cont H1 {
+    color: #080100;
+
+}
+
+.botao_contato {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+    outline: 0
+}
+
+.conteudo_cont H1 {
+    color: #e74c3c;
+    font-size: 40px;
+}
+
+.conteudo_cont p{
+    font-size: 20px;
+}
+
+/* Fim da página contato */
+
+/* inicio do css da tela login */
+
+/* geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #323232;
+    border: none;
+  }
+  
+   body {
+    background-image: url('../Imagens/farmácia.webp');
+    background-size: cover;
+    background-position-y: -200px;
+  } 
+
+
+  
+  textarea:focus, input:focus{
+    outline: none;
+  }
+  
+  a {
+    font-size: .8rem;
+  }
+  
+  a:hover {
+    color: #08558B;
+  }
+  
+  /*  iniciocontainer login */
+  #login-container {
+    background-color: lightsalmon;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* formulário */
+  form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  
+  label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: .8rem;
+  }
+  
+  input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  input:focus {
+    border-bottom: 2px solid #f5eadc;
+  }
+  
+  #forgot-pass {
+    display: block;
+    text-align: right;
+  }
+  
+  input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    color:rgb(248, 109, 54);
+    background-color: #f5eadc;
+    font-weight: bold;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #1B223C;
+    transition: .5s;
+  }
+  
+  /* redes sociais */
+  #social-container {
+    margin-bottom: 20px;
+  }
+  
+  #social-container p {
+    margin-bottom: 20px;
+  }
+  
+  #social-container i {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 0 5px;
+    color: #FFF;
+  }
+  
+  .fa-facebook-f {
+    background-color: #3B5998;
+  }
+  
+  .fa-linkedin {
+    background-color: #0077B5;
+  }
+  
+  /* registrar */
+  #register-container p {
+    margin-bottom: 10px;
+  }
+  

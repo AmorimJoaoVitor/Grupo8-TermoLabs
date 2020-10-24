@@ -2,3 +2,8 @@
 [1010/215531.253:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
 [1011/135640.030:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
 [1013/084332.475:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1021/152422.375:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1022/101930.235:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1022/114712.850:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Guilherme\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\f7dfe842-3d54-4bea-87ad-24adb5282caa: O sistema não pode encontrar o caminho especificado. (0x3)
+[1022/115105.171:ERROR:process_info.cc(359)] UncheckedAllocate
+[1023/103442.122:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
