@@ -565,14 +565,14 @@ justify-content: center;
 
 /* geral */
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica;
     color: #323232;
     border: none;
-  }
+  } */
   
    /* body {
     background-image: url('../Imagens/farmácia.webp');
@@ -586,13 +586,13 @@ justify-content: center;
     outline: none;
   }
   
-  a {
+  /* a {
     font-size: .8rem;
-  }
+  } */
   
-  a:hover {
+  /* a:hover {
     color: #08558B;
-  }
+  } */
   
   /*  iniciocontainer login */
   #login-container {
