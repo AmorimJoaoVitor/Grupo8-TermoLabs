@@ -37,18 +37,20 @@ alter table camara add column fkEmpresa INT;
 alter table camara add foreign key (fkEmpresa) references empresa(idEmpresa);
 
 create table sensorTemp (
-idSensor INT primary key auto_increment,
-tipoCamara varchar(45)
+idSensor INT primary key auto_increment
 ) auto_increment = 200;
 
 alter table sensorTemp add column fkCamara INT; 
 alter table sensorTemp add foreign key (fkCamara) references Camara(idCamara);
 
 create table medicao (
+idMedicao int primary key auto_increment,
 data_hora datetime,
 temperatura INT,
-primary key(data_hora, temperatura)
+fkSensor int,
+foreign key (fkSensor) references sensortemp (idSensor)
 ) auto_increment = 300;
+
 
 alter table medicao add column fkSensor INT; 
 alter table medicao add foreign key (fkSensor) references sensorTemp(idSensor);
@@ -62,14 +64,17 @@ insert into camara values
 (null, "5m²", "Freezer", 1);
 
 insert into sensorTemp values
-(null, "Geladeira comercial", 101),
-(null, "Freezer", 100);
+(null, 101),
+(null, 100);
 
 insert into medicao values
-("2020-10-22 14:23:54", 5, 201),
-("2020-10-21 12:00:00", 6, 200);
+(null, "2020-10-22 14:23:54", 5, 201),
+(null, "2020-10-21 12:00:00", 6, 200);
 
 select * from empresa;
 select * from camara;
 select * from sensorTemp;
 select * from medicao;
+select * from usuario, empresa, camara, sensortemp, medicao where 
+                                             idEmpresa = camara.fkEmpresa and idEmpresa = usuario.fkEmpresa 
+                                                                                        and idCamara = fkCamara and idSensor = fkSensor;
