@@ -2,8 +2,9 @@
     color: #000;
     border-right: 3px solid #ff4500;
     width: 250px;
-    height: 95vh;
+    height: 215vh;
     float: left;
+    position: fixed;
 }
 
 .container_navbar{
@@ -36,11 +37,18 @@
     display: flex;
     flex-direction: column;
     width: 80%;
-    padding: 110px 0px 0 55px;
+    
 }
 
 .slc_camaras{
     width: 150px;
     font-size: 25px;
     border: solid darkgrey 2px;
+}
+
+.container_graficos{
+    width: 60%;
+    margin: auto;
+    padding-top: 160px;
+
 }
