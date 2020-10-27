@@ -1,0 +1,124 @@
+body{
+    background-color: #0090a8;
+    margin: 0;
+}
+
+.navbar{
+    color: #000;
+    border-right: 3px solid #ff4500;
+    width: 250px;
+    height: 183vh;
+    float: left;
+    background-color: white ;
+}
+
+.navbar_empresa{
+    background: aliceblue;
+    width: 87%;
+    margin: 0% 13%;
+}
+.container_empresa{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.navbar_empresa img {
+    width: 80px;
+    margin: 27px 28px 0 0;
+}
+
+.container_navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_navbar img {
+    margin-top: 25px;
+}
+
+.navbar ul{
+    text-transform: uppercase;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    margin-top: 60px;
+}
+
+.navbar li {
+    list-style: none;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.container_navbar li:hover{
+    color: #ff4400;
+}
+
+.grafico{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
+
+.slc_camaras{
+    width: 150px;
+    font-size: 25px;
+    border: solid darkgrey 2px;
+}
+
+.container_graficos{
+    width: 60%;
+    margin: 2% 20%;
+    padding: 110px;
+    background-color: white;
+    border-radius: 30px;
+    border-top: 3px solid orangered;
+    border-left: 3px solid orangered;
+}
+
+/* Inicio rodapé */
+.logo_rod {
+    width: 360px;
+    text-align: center;
+    padding-left: 20px;
+    
+}
+.rodape{
+    height: 212px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid #e74c3c;
+    background-color: white;
+}
+
+.rodape h5{
+    color: #e74c3c;
+}
+
+.icones img {
+    width: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.icones {
+    text-align: center;
+    padding-right: 20px;
+}
+
+.endereco {
+    text-align: center;
+}
+
+.endereco p {
+    text-align: center;
+}
