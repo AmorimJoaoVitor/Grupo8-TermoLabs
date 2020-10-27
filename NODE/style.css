@@ -22,7 +22,7 @@ body{
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: end;
 }
 
 .navbar_empresa img {
