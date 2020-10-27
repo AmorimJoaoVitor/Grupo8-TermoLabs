@@ -1,13 +1,12 @@
-// Sensor de Temperatura
 function lm35(min, max) {
     min = typeof min == 'undefined' ? 2 : min;
-    max = typeof max == 'undefined' ? 8 : max;
+    max = typeof max == 'undefined' ? 8: max;
     
     let random = Math.random() * (max - min) + min;
 
     return random
 }
-//Sensor de Aproximação
+
 function trc5000() {
     min = 0;
     max = 1;
@@ -20,7 +19,7 @@ function trc5000() {
         return 0
     }
 }
-// Sensor de Luminosidade
+
 function ldr(){
     min = 0;
     max = 1023
@@ -29,7 +28,7 @@ function ldr(){
 
     return random
 }
-// Sensor de Umidade
+
 function dht11(options){
 
     minHumidity = options.minHum;
@@ -51,6 +50,7 @@ function dht11(options){
 
     minHumidity = typeof minHumidity == 'undefined' ? 20 : minHumidity;
     maxHumidity = typeof maxHumidity == 'undefined' ? 80 : maxHumidity;
+
 
     let randomHumidity = Math.floor(Math.random()*(maxHumidity-minHumidity+1)+minHumidity);
     
