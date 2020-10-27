@@ -38,8 +38,8 @@
                 <b>Telefone</b><input class="form_trabalho" id="id_telefone" placeholder="Insira seu telefone">
                 <b>Celular</b><input class="form_trabalho" id="id_celular" placeholder="Insira seu celular">
                 <b>Endereço</b><input class="form_trabalho" id="id_endereco" placeholder="Insira seu endereço">
-                <b>Grau de formação</b><select class="select" id="id_escolaridade"
-                    placeholder="Insira sua escolaridade">
+                <b>Grau de formação</b>
+                <select class="select" id="id_escolaridade" placeholder="Insira sua escolaridade">
                     <option value="">-- selecione --</option>
                     <option value="fi">Fundamental Incompleto</option>
                     <option value="fc">Fundamental Completo</option>
@@ -53,7 +53,7 @@
                     <option value="">-- selecione --</option>
                     <option value="sp">São Paulo</option>
                 </select>
-                <button class="botao_trabalho">Enviar</button>
+                <button class="botao_trabalho" onclick="enviar()">Enviar</button>
             </div>
         </div>
     </div>
@@ -88,3 +88,19 @@
 <!-- Fim footer -->
 
 </html>
+
+<script>
+    function enviar(){
+        alert('Informações enviadas com sucesso!');
+        document.location.reload();
+        /* id_nome.value = "";
+        id_endereco.value = "";
+        id_telefone.value = "";
+        id_celular.value = "";
+        id_email.value = "";
+        id_escolaridade.value = "";
+        id_estado.value = "";
+        */
+    }
+
+</script>
