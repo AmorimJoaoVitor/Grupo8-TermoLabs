@@ -6,7 +6,7 @@ function lm35(min, max) {
 
     return random
 }
-
+/*
 function trc5000() {
     min = 0;
     max = 1;
@@ -58,6 +58,6 @@ function dht11(options){
     
     return [randomHumidity, randomTemperature]
 }
-
+*/
 
 module.exports = {lm35, trc5000, ldr, dht11};
