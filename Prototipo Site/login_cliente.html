@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>Line Chart</title>
+	<title>Dashboard Medley</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 	<script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
 	<script src="http://www.chartjs.org/samples/latest/utils.js"></script>
@@ -174,11 +174,14 @@
 		}
 	};
 	// esse "sortearTemperatura()" será desnecessário quando usarmos o backend futuramente
-	function sortearTemperatura() {
-		var limiteMin = -1;
-		var limiteMax = 10;
-		var minimoAbsoluto = Math.abs(limiteMin);
-		return (Math.random() * (minimoAbsoluto+limiteMax) - minimoAbsoluto).toFixed(1);
+	function sortearTemperatura(min, max) {
+		
+		min = typeof min == 'undefined' ? 2 : min;
+    	max = typeof max == 'undefined' ? 8: max;
+    
+    	let random = Math.random() * (max - min) + min;
+
+    	return random
 	}
 
 	function recuperarDadosIniciais() {
@@ -186,65 +189,42 @@
 		// esse "registros" será recuperado do backend futuramente
 		var registros = [
 			{
-				momento: '00:03:42',
+				momento: '00:03:00',
 				leitura: sortearTemperatura()
 			},
 			{
-				momento: '00:03:52',
+				momento: '00:05:00',
 				leitura: sortearTemperatura()
 			},
 			{
-				momento: '00:04:02',
+				momento: '00:07:00',
 				leitura: sortearTemperatura()
 			},
 			{
-				momento: '00:04:12',
-				leitura: sortearTemperatura()
-			},
-			{
-				momento: '00:04:22',
-				leitura: sortearTemperatura()
-			},
-			{
-				momento: '00:04:32',
-				leitura: sortearTemperatura()
-			},
-			{
-				momento: '00:04:42',
+			momento: '00:09:00',
 				leitura: sortearTemperatura()
 			}
 		];
 		
 // registrar dados do segundo grafico
 		var registros2 = [
-			{
-				momento: '00:03:42',
+		{
+				momento: '00:03:00',
 				leitura: sortearTemperatura()
 			},
 			{
-				momento: '00:03:52',
+				momento: '00:05:00',
 				leitura: sortearTemperatura()
 			},
 			{
-				momento: '00:04:02',
+				momento: '00:07:00',
 				leitura: sortearTemperatura()
 			},
 			{
-				momento: '00:04:12',
-				leitura: sortearTemperatura()
-			},
-			{
-				momento: '00:04:22',
-				leitura: sortearTemperatura()
-			},
-			{
-				momento: '00:04:32',
-				leitura: sortearTemperatura()
-			},
-			{
-				momento: '00:04:42',
+			momento: '00:09:00',
 				leitura: sortearTemperatura()
 			}
+			
 		];
 
 		var contador = 0;

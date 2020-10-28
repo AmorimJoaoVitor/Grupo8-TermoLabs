@@ -1,6 +1,11 @@
-function calcular(){
-    var calc = valorInput.value * 0.65
+function instalar() {
+    var camara = Number(valorInput.value);
+    
+    if (camara > 10) {
+       var calc = 150;
+    }
+    calc = camara * 10 + 150 + 500;
 
-    resultado.innerHTML = `Contratando os serviços da
-    TermoLABs você deixa de perder R$ ${calc} por mês. `
+    resultado.innerHTML = `O custo de instalação do 
+                              nosso sistema vai ser de R$${calc}`;
 }
