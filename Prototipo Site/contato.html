@@ -70,7 +70,7 @@
                         <option value="outros">Outros</option>
 
                     </select>
-                    <button class="botao_contato">Enviar</button>
+                    <button onclick="mensagem()" class="botao_contato">Enviar</button>
 
                 </div>
 
@@ -104,3 +104,10 @@
 </footer>
 <!-- Fim footer -->
 </html>
+<script>
+    function mensagem(){
+        alert('Mensagem enviada com sucesso!');
+        document.location.reload();
+        
+    }
+</script>

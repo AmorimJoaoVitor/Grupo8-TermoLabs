@@ -638,7 +638,7 @@ justify-content: center;
     text-align: right;
   }
   
-  input[type="submit"] {
+  input[type="button"] {
     text-align: center;
     text-transform: uppercase;
     border: none;
@@ -651,9 +651,10 @@ justify-content: center;
     font-weight: bold;
   }
   
-  input[type="submit"]:hover {
+  input[type="button"]:hover {
     background-color: #1B223C;
     transition: .5s;
+    
   }
   
   /* redes sociais */

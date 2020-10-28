@@ -27,7 +27,7 @@
                     <input type="email" name="email" placeholder="Informe o seu E-mail" class="form-input">
                 </div>
                 <div>
-                    <input type="submit" value="Cadastrar" class="form-input">
+                    <input onclick="cadastrar()" type="submit" value="Cadastrar" class="form-input">
                 </div>
                 <div>
                     Você já tem uma conta? <a href="login.html">Efetue o seu Login</a>
@@ -39,7 +39,10 @@
 </html>
 
 
-
-</body>
-
-</html>
+<script>
+    function cadastrar(){
+        alert('Cadastro realizado com sucesso!');
+        document.location.reload();
+        
+    }
+</script>
