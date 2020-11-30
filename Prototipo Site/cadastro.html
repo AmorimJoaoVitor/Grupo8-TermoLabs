@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TermoLABs - Trabalhe Conosco</title>
+    <link rel="stylesheet" href="CSS/stylecadastro.css">
+</head>
+
+<body>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <form action="" method="post">
+                <div>
+                    <h1>Cadastro do Usuário</h1>
+                </div>
+                <div>
+                    <input type="text" name="nome" placeholder="Informe o seu Login" class="form-input">
+                </div>
+                <div>
+                    <input type="password" name="senha" placeholder="Informe a sua Senha" class="form-input">
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Informe o seu E-mail" class="form-input">
+                </div>
+                <div>
+                    <input onclick="cadastrar()" type="submit" value="Cadastrar" class="form-input">
+                </div>
+                <div>
+                    Você já tem uma conta? <a href="login.html">Efetue o seu Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script>
+    function cadastrar(){
+        alert('Cadastro realizado com sucesso!');
+        document.location.reload();
+        
+    }
+</script>

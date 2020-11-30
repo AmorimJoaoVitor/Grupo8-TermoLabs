@@ -1,0 +1,40 @@
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f1f2ec;
+}
+
+.container{
+    background-color: lightsalmon;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+.form-box{
+    width: 300px;
+    background:  lightsalmon;
+    font-family: Lato;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top: 10px solid  lightsalmon;
+    
+}
+
+.form-box .form-input{
+    border: none;
+    background: #eee;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 10px;
+}
+

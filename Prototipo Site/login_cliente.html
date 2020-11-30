@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>Line Chart</title>
+	<title>Dashboard Medley</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 	<script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
 	<script src="http://www.chartjs.org/samples/latest/utils.js"></script>
@@ -25,6 +25,7 @@
 			<ul>
 				<li>Dashboard</li> 
 				<li>Suporte</li>
+				<li>Relatório</li>
 			</ul>
 		</div>
 	</div>
@@ -61,7 +62,7 @@
 	<br>
 	<br>
 
-	<div class="grafico">
+	<div class="grafico" id="graf">
 	
 		<select class="slc_camaras">
 			<option value="cam1">Câmara 1</option>
@@ -82,7 +83,7 @@
 	</section>
 </div>
 </div>
-
+ 
 	<script>
 		var config_1 = {
 		type: 'line',
